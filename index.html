@@ -39,6 +39,7 @@
                         class="sr-only">Menu</span>
                 </div>
 
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <!-- Main Menu -->
                 <div class="inner-nav desktop-nav">
                     <ul class="clearlist scroll-nav">
@@ -46,9 +47,12 @@
                         <!-- //Change from #team to news -->
                         <li><a href="#news" class="nav-button">News</a></li>
                         <li><a href="#about-us" class="nav-button">About</a></li>
-                        <li><a href="#contacts" class="nav-button">Contacts</a></li>
+                        <li id="contact-button"><a href="#contacts" class="nav-button">Contacts</a></li>
                     </ul>
                 </div>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
             </div>
         </nav>
         <!-- End Navigation panel -->
@@ -120,7 +124,7 @@
 
         <span id="overlay"></span>
         <!-- News Content -->
-        <div class="content" id="news">
+        <div class="content news-page" id="news">
             <div class="news-grid">
 
                 <!-- First Column -->
@@ -132,12 +136,12 @@
 
                 <!-- Second & Third Columns -->
                 <!-- Row 1 -->
-                <div class="image-news-container">
+                <div class="image-news-container row-2-img">
                     <a target="_blank"
                         href="https://www.losangeles.af.mil/News/Article-Display/Article/1952209/section-31-bringing-the-space-and-missile-systems-centers-software-factory-to-l/"><img
                             src="images/News-Images/Image_01.jpg" alt="#" class="image-news"></a>
                 </div>
-                <div class="content-news-container">
+                <div class="content-news-container row-2-content">
                     <a target="_blank"
                         href="https://www.losangeles.af.mil/News/Article-Display/Article/1952209/section-31-bringing-the-space-and-missile-systems-centers-software-factory-to-l/">
                         <h3 class="content-news-title">Section 31: Bring The Space And Missle Systems Center's
@@ -151,12 +155,12 @@
                 <!-- Row 1 End -->
 
                 <!-- Row 2 -->
-                <div class="image-news-container">
+                <div class="image-news-container row-3-img">
                     <a target="_blank"
                         href="https://www.airforcemag.com/cspoc-eyes-new-space-c2-tools-from-speedy-coders/"><img
                             src="images/News-Images/Image_02.jpg" alt="#" class="image-news"></a>
                 </div>
-                <div class="content-news-container">
+                <div class="content-news-container row-3-content">
                     <a target="_blank"
                         href="https://www.airforcemag.com/cspoc-eyes-new-space-c2-tools-from-speedy-coders/">
                         <h3 class="content-news-title">CSpOC Eyes New Space C2 Tools From Speedy Coders</h3>
@@ -166,12 +170,12 @@
                 <!-- Row 2 End -->
 
                 <!-- Row 3 -->
-                <div class="image-news-container">
+                <div class="image-news-container row-4-img">
                     <a target="_blank"
                         href="https://www.airforcemag.com/article/the-air-force-software-revolution/"><img
                             src="images/News-Images/Image_03.jpg" alt="#" class="image-news"></a>
                 </div>
-                <div class="content-news-container">
+                <div class="content-news-container row-4-content">
                     <a target="_blank" href="https://www.airforcemag.com/article/the-air-force-software-revolution/">
                         <h3 class="content-news-title">The Air Force Software Revolution</h3>
                         <h5 class="content-news-sub">By Rachel S. Cohen | Sept. 1, 2019</h5>
@@ -458,13 +462,10 @@
                         entire software development lifecycle (SDLC).</p>
                 </div>
             </div>
-
-
-
         </div>
         <!-- About Content End -->
 
-        <div class="content" id="contacts">
+        <div class="content contacts-page" id="contacts">
 
             <div class="contact-info">
 
@@ -520,11 +521,11 @@
                 <!-- Contact Right End -->
             </div>
 
-            <!-- Video Background -->
+            <!-- Image Background -->
             <div class="contact-img">
                 <img src="images/Contact-Images/Contact.png" alt="#contacts">
             </div>
-            <!-- End Video Background -->
+            <!-- End Image Background -->
 
         </div>
 
