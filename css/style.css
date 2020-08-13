@@ -499,23 +499,23 @@ a.logo:hover{
     height: 64px;
 }
 .people .overlay {
-    height: 520px;
+    height: 530px;
 }
 .person-1 .people .person-2-overlay {
     width: 190px;
 }
 .person-2 .people .person-1-overlay {
-    width: 170px;
+    width: 176px;
 }
 .people .person-3-overlay {
-    width: 240px;
+    width: 245px;
     margin-left: 7px;
 }
 .person-3 .people .person-1-overlay {
     width: 185px;
 }
 .person-3 .people .person-2-overlay {
-    width: 162px;
+    width: 168px;
 }
 .person-1 .people .person-1-img,
 .person-2 .people .person-2-img,
@@ -729,6 +729,72 @@ a.logo:hover{
     .content-news-container {
         text-align: center;
     }
+    .content-news-sub {
+        margin-bottom: 20px;
+    }
+
+    /* About Content */
+    .person-1 .people .person-2-img,
+    .person-1 .people .person-2-overlay,
+    .person-1 .people .person-3-img,
+    .person-1 .people .person-3-overlay,
+    .person-1 .people-content .person-2-text,
+    .person-1 .people-content .person-2-fav,
+    .person-1 .people-content .person-3-text,
+    .person-1 .people-content .person-3-fav,
+    .person-2 .people .person-1-img,
+    .person-2 .people .person-1-overlay,
+    .person-2 .people .person-3-img,
+    .person-2 .people .person-3-overlay,
+    .person-2 .people-content .person-1-text,
+    .person-2 .people-content .person-1-fav,
+    .person-2 .people-content .person-3-text,
+    .person-2 .people-content .person-3-fav,
+    .person-3 .people .person-1-img,
+    .person-3 .people .person-1-overlay,
+    .person-3 .people .person-2-img,
+    .person-3 .people .person-2-overlay,
+    .person-3 .people-content .person-1-text,
+    .person-3 .people-content .person-1-fav,
+    .person-3 .people-content .person-2-text,
+    .person-3 .people-content .person-2-fav {
+        display: none;
+    }
+    .person-1 .about-container,
+    .person-2 .about-container,
+    .person-3 .about-container {
+        grid-template-columns: unset;
+        top: -50px;
+    }
+    .person-1 .people,
+    .person-2 .people,
+    .person-3 .people {
+        padding-left: 150px;
+        margin-top: 20px;
+    }
+    .about-text hr {
+        width: 100%;
+        margin-left: 0;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .process-container {
+        grid-template-columns: unset;
+        justify-content: center;
+    }
+    .process-img {
+        width: 100%;
+    }
+    .process-img-container {
+        width: 100%;
+    }
+    .process-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
 
 
     /* Contact Content */
