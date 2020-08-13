@@ -354,6 +354,75 @@ a.logo:hover{
     opacity: 0;
     transition: 1s;
 }
+.scroll-down {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mouse {
+    width: 1.5rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    display: flex;
+    /* animation: arrow-down .5s alternate infinite; */
+}
+.mouse span {
+    width: .7rem;
+    height: .7rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+.arrow span {
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    border: 2px solid transparent;
+    border-right-color: white;
+    border-bottom-color: white;
+    transform: rotate(45deg);
+    animation: arrow-down .5s alternate infinite;
+}
+.scroll-text {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: .9rem;
+    animation: arrow-down .5s alternate infinite;
+}
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /* Home Transitions */
 .first-content.fade-out {
     opacity: 0;
@@ -682,6 +751,9 @@ a.logo:hover{
     /* Home Content */
     .home-content-text {
         width: 100%;
+    }
+    .scroll-down {
+        display: none;
     }
 
     /* News Content */
