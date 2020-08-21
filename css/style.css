@@ -584,7 +584,7 @@ a.logo:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10%;
+    padding-left: 7%;
 }
 .people .overlay {
     position: absolute;
@@ -891,7 +891,7 @@ a.logo:hover{
         grid-template-columns: 75% 80px;
     }
     .people .overlay {
-        height: 17%;
+        height: 23%;
         width: 25%;
     }
     .names {
