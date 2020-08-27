@@ -11,7 +11,7 @@ const navBkgIn = new ScrollMagic.Scene({
     .setClassToggle('.main-nav', 'fade-in')
     .addTo(controller);
 
-const textColor = new ScrollMagic.Scene({
+const colorChange = new ScrollMagic.Scene({
     triggerElement: '.first-content',
     triggerHook: 0.3
 })
@@ -19,6 +19,15 @@ const textColor = new ScrollMagic.Scene({
     //     name: 'color change'
     // })
     .setClassToggle('.nav-button', 'color-change')
+    .addTo(controller);
+const colorChange2 = new ScrollMagic.Scene({
+    triggerElement: '.first-content',
+    triggerHook: 0.3
+})
+    // .addIndicators({
+    //     name: 'color change'
+    // })
+    .setClassToggle('span', 'color-change')
     .addTo(controller);
 
 const logoOut = new ScrollMagic.Scene({

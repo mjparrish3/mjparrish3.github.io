@@ -42,7 +42,7 @@ hr {
     clear: both;
     background-color: white;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     hr {
         width: 70%;
     }
@@ -159,9 +159,6 @@ hr {
 .nav-button.color-change {
     color: #444444; 
 }
-
-
-
 /*
  ==============
  ==== LOGO ====
@@ -195,7 +192,7 @@ hr {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .inner-nav {
         display: none;
         width: 90px;
@@ -229,12 +226,17 @@ hr {
     .nav-toggle-label span,
     .nav-toggle-label span::before,
     .nav-toggle-label span::after{
-        background-color: black;
+        background-color: white;
         display: block;
         height: 2px;
         width: 2em;
         border-radius: 2px;
         position: relative;
+    }
+    .nav-toggle-label span.color-change,
+    .nav-toggle-label span.color-change::before,
+    .nav-toggle-label span.color-change::after{
+        background-color: black;
     }
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
@@ -408,7 +410,7 @@ a.logo:hover{
     opacity: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .home-content-text {
         width: 100%;
     }
@@ -497,7 +499,7 @@ a.logo:hover{
     font-weight: 200;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .news-page {
         height: 100%;
     }
@@ -540,14 +542,15 @@ a.logo:hover{
     .news-grid {
         grid-template-areas: 
         'title title title'
-        'img-2 img-2 img-2'
-        'content-2 content-2 content-2'
-        'img-3 img-3 img-3' 
-        'content-3 content-3 content-3' 
-        'img-4 img-4 img-4' 
-        'content-4 content-4 content-4';
-        grid-row-gap: 10px;
-        margin-left: 10px;
+        'img-2 . .'
+        'content-2 content-2 .'
+        'img-3 . .' 
+        'content-3 content-3 .' 
+        'img-4 . .' 
+        'content-4 content-4 .';
+        grid-row-gap: 1rem;
+        width: 100%;
+        margin-left: 1rem;
     }
     .content-news-title {
         margin-top: 0;
@@ -582,13 +585,13 @@ a.logo:hover{
     left: -5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
-    margin-top: 20%;
+    grid-column-gap: 2.5rem;
+    margin-top: 18rem;
 }
 .about-text {
     width: 100%;
     text-align: right;
-    padding-top: 10%;
+    padding-top: 4rem;
 }
 .about-text .title {
     margin-top: 20px;
@@ -610,9 +613,9 @@ a.logo:hover{
 }
 .people-content {
     display: grid;
-    grid-template-columns: 65% 80px;
+    grid-template-columns: .8fr 80px;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 14%;
 }
 .row {
     display: inherit;
@@ -620,7 +623,7 @@ a.logo:hover{
 .column-sides {
     float: left;
     width: 30%;
-    margin: -40px;
+    margin: -2.5rem;
     display: flex;
     align-items: center;
 }
@@ -659,7 +662,7 @@ a.logo:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 7%;
+    padding-left: 2.5rem;
 }
 .people .overlay {
     position: absolute;
@@ -683,7 +686,7 @@ a.logo:hover{
     opacity: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .person-1 .people-content .person-2-text,
     .person-1 .people-content .person-2-fav,
     .person-1 .people-content .person-3-text,
@@ -702,18 +705,19 @@ a.logo:hover{
     .person-2 .about-container,
     .person-3 .about-container {
         grid-template-columns: unset;
-        top: -50px;
+        margin-top: 14rem;
     }
     .person-1 .people,
     .person-2 .people,
     .person-3 .people {
         margin-top: 20px;
+        padding: 0 3rem;
     }
     .column {
         width: 40%;
     }
     .column-center {
-        width: 63%;
+        width: 55%;
     }
     .column-center img {
         width: 100%;
@@ -725,13 +729,20 @@ a.logo:hover{
         text-align: right;
     }
     .people-content {
-        margin-left: 5%;
+        margin-left: 25%;
         margin-top: 15px;
-        width: 100%;
-        grid-template-columns: 75% 80px;
+        grid-template-columns: 80px 1fr;
+        grid-template-areas: 
+            "first second";
+    }
+    .people-text {
+        grid-area: second;
+    }
+    .favicon-container {
+        grid-area: first;
     }
     .people .overlay {
-        height: 23%;
+        height: 25%;
         width: 25%;
     }
     .names {
@@ -750,7 +761,7 @@ a.logo:hover{
     .process-text {
         width: 100%;
         text-align: left;
-        margin: 20px 0;
+        margin-bottom: 40px;
         grid-area: info;
     }
     .process-container hr {
@@ -838,7 +849,7 @@ a.logo:hover{
     color: blue;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .contact-info {
         grid-template-columns: unset;
         grid-row-gap: 20px;
@@ -899,7 +910,7 @@ a.logo:hover{
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .footer-img-container {
         margin: 10px;
     }
