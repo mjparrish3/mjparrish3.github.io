@@ -581,7 +581,7 @@ a.logo:hover{
 .about-container {
     width: 90%;
     position: absolute;
-    top: -30%;
+    top: -35%;
     left: -5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -602,6 +602,13 @@ a.logo:hover{
 }
 .about-text p {
     font-weight: 200;
+}
+.quotes {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.quotes span {
+    color: #e69947;
 }
 .names {
     font-size: 1.5rem;
