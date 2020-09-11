@@ -66,8 +66,7 @@ hr {
     line-height: 1.6;
 }
 .image-news,
-.people,
-.contact-left {
+.people {
     width: 100%;
 }
 /* GlobalTransitions */
@@ -78,7 +77,7 @@ hr {
 .person-1 .part-1.fade-in,
 .person-2 .part-2.fade-in,
 .person-3 .part-3.fade-in,
-.process .process-container.fade-in {
+.process .process-1.fade-in {
     opacity: 1;
     transition: 1s;
 }
@@ -604,11 +603,14 @@ a.logo:hover{
     font-weight: 200;
 }
 .quotes {
+    font-family: 'Roboto', 'san-serif';
+    font-weight: 300;
     font-style: italic;
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 .quotes span {
-    color: #e69947;
+    color: #e48622;
 }
 .names {
     font-size: 1.5rem;
@@ -653,13 +655,91 @@ a.logo:hover{
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 40px;
 }
-.process-container hr {
+.process-container hr,
+.partners hr {
     margin-left: 0;
+    margin-bottom: 1rem;
     width: 100%;
 }
-.process-container h1 {
+.sub-title {
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.process-1 {
+    grid-template-columns: 2fr 1fr;
+}
+.process-1-content {
+    text-align: right;
+    padding-left: 5rem;
+}
+.process-1-content .quotes {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.process-container .words {
     font-size: 3rem;
 }
+.process-1-title {
+    font-size: 4rem;
+}
+.process-1-title,
+.process-2-3-title {
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+.process-2-3-title {
+    text-align: center;
+}
+.process-4 {
+    grid-template-columns: 1fr 2fr;
+}
+.questions {
+    margin: 2rem 0;
+}
+.process-5 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    margin: 0 3rem;
+}
+.process-5 .row {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr 0.3fr 0.2fr 0.5fr;
+    margin: 0 1rem;
+}
+.process-5 .sub-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+}
+.process-5 .sub-title,
+.process-5-title,
+.process-5 .process-img-container,
+.process-5 .practice  {
+    text-align: center;
+}
+.process-5 .process-img-container,
+.process-5 .practice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.process-5 .process-img-container {
+    padding: 1.5rem 0;
+}
+.process-5 .practice {
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+.process-5 li {
+    font-style: italic;
+}
+
 
 /* ===============
     Images & Text
@@ -685,12 +765,59 @@ a.logo:hover{
     position: relative;
     z-index: 2;
 }
-/* About Us Transitions */
 .person-1 .part-1,
 .person-2 .part-2,
 .person-3 .part-3,
-.process-container {
+.process-1 {
     opacity: 0;
+}
+
+/* 
+===============
+    Partners
+===============    
+*/
+.partners-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+.partners {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 40px;
+}
+.partners-container .quotes {
+    text-align: right;
+}
+.partners-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.partner-img-container{
+    width: 25rem;
+}
+.partner-img {
+    width: 100%;
+}
+.partner-logo-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.partner-logo-container .partner-img-container{
+    width: 15rem;
+}
+.partner-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.partners .process-text {
+    text-align: right;
+    font-family: 'Roboto', 'san-serif';
 }
 
 @media only screen and (max-width: 850px) {
@@ -793,12 +920,18 @@ a.logo:hover{
  == CONTACT ===
  ==============
  */
-.contact-info {
+ .contact-container {
+    width: 80%;
     position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', 'san-serif';
+ }
+.contact-info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-left: 20%;
-    width: 75%;
+    grid-template-columns: 2fr 1fr;
+    padding: 5%;
 }
 .contact-info h1 {
     font-size: 2rem;
@@ -826,16 +959,19 @@ a.logo:hover{
 .contact-info h3 {
     font-weight: 300;
 }
-.contact-right h3 {
+.contact-left {
+    width: 80%;
+}
+.contact-left h3 {
     margin-top: 40px;
     margin-bottom: 40px;
     text-transform: uppercase;
 }
-.contact-right ul {
+.contact-left ul {
     padding-left: 15px;
     width: 70%;
 }
-.contact-right ul li,
+.contact-left ul li,
 .store-grid p {
     line-height: 1.6;
 }

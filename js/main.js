@@ -1,6 +1,11 @@
 const controller = new ScrollMagic.Controller()
 
-// Nav Transitions
+/* 
+===============
+Nav Transitions
+=============== 
+*/
+
 const navBkgIn = new ScrollMagic.Scene({
     triggerElement: '.first-content',
     triggerHook: 0.3
@@ -43,11 +48,15 @@ const logoIn = new ScrollMagic.Scene({
 })
     .setClassToggle('.dark', 'fade-in')
     .addTo(controller)
-// Nav Transitions End 
 
 
 
-// Home Content Transitions
+/* 
+========================
+Home Content Transitions
+======================== 
+*/
+
 const homePin = new ScrollMagic.Scene({
     triggerElement: '.home-video',
     triggerHook: 0,
@@ -83,11 +92,15 @@ const secondContentIn = new ScrollMagic.Scene({
     // })
     .setClassToggle('.second-content', 'fade-in')
     .addTo(controller);
-// Home Content Transitions End 
 
 
 
-// News Content Transitions 
+/*
+========================
+News Content Transitions
+========================
+*/ 
+
 const newsGridIn = new ScrollMagic.Scene({
     triggerElement: '#news',
     triggerHook: 0.3,
@@ -98,16 +111,20 @@ const newsGridIn = new ScrollMagic.Scene({
     // })
     .setClassToggle('.news-grid', 'fade-in')
     .addTo(controller);
-// News Content Transitions End 
 
 
 
 
-// About Content Transitions
+/* 
+=========================
+About Content Transitions
+=========================
+*/
+
 const firstPin = new ScrollMagic.Scene({
     triggerElement: '#about-us',
     triggerHook: 0,
-    duration: '300%'
+    duration: '700%'
 })
     // .addIndicators({
     //     name: 'about pin in'
@@ -178,5 +195,5 @@ const processIn = new ScrollMagic.Scene({
     // .addIndicators({
     //     name: 'process container in'
     // })
-    .setClassToggle('.process-container', 'fade-in')
+    .setClassToggle('.process-1', 'fade-in')
     .addTo(controller);
