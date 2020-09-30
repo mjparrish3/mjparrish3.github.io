@@ -587,14 +587,20 @@ a.logo:hover{
     grid-column-gap: 2.5rem;
     margin-top: 18rem;
 }
+.about-mouse {
+    opacity: 1;
+}
+.about-mouse.fade-out {
+    opacity: 0;
+    transition: 1s;
+}
 .about-text {
     width: 100%;
     text-align: right;
     padding-top: 4rem;
 }
 .about-text .title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 .about-text hr {
     margin-left: 60%;
@@ -863,7 +869,7 @@ a.logo:hover{
         text-align: right;
     }
     .people-content {
-        margin-left: 25%;
+        margin-left: 8%;
         margin-top: 15px;
         grid-template-columns: 80px 1fr;
         grid-template-areas: 
@@ -908,6 +914,35 @@ a.logo:hover{
         'image';
         margin: 0 20px;
     }
+    .quotes,
+    .process-1-content .quotes {
+        line-height: 1;
+        font-size: 1.5rem;
+    }
+    .about-text .title {
+        margin: 5px 0;
+    }
+    .process-1-title {
+        font-size: 3rem;
+    }
+    .questions {
+        margin: .5rem 0;
+    }
+    .process-4 .process-img-container {
+        width: 61%;
+        margin: 0 auto;
+    }
+    .process-4 .process-text {
+        margin-bottom: 10px;
+    }
+    .process-5 {
+        grid-template-areas: unset;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .partners {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 /* End About Us Content */
 
@@ -927,7 +962,19 @@ a.logo:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Roboto', 'san-serif';
+    opacity: 1;
  }
+.contact-container.fade-out {
+    opacity: 0;
+    transition: 1s;
+}
+.partners-container {
+    opacity: 0;
+}
+.partners-container.fade-in {
+    opacity: 1;
+    transition: 1s;
+}
 .contact-info {
     display: grid;
     grid-template-columns: 2fr 1fr;

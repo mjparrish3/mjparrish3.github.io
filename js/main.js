@@ -99,7 +99,7 @@ const secondContentIn = new ScrollMagic.Scene({
 ========================
 News Content Transitions
 ========================
-*/ 
+*/
 
 const newsGridIn = new ScrollMagic.Scene({
     triggerElement: '#news',
@@ -197,3 +197,47 @@ const processIn = new ScrollMagic.Scene({
     // })
     .setClassToggle('.process-1', 'fade-in')
     .addTo(controller);
+
+    const mouseOut = new ScrollMagic.Scene({
+        triggerElement: '.process-container',
+        triggerHook: 0.8
+    })
+        .addIndicators({
+            name: 'mouse out'
+        })
+        .setClassToggle('.about-mouse', 'fade-out')
+        .addTo(controller);
+
+
+/*
+=================
+    Contacts
+================
+*/
+const contactPin = new ScrollMagic.Scene({
+    triggerElement: '#contacts',
+    triggerHook: 0,
+    duration: '200%'
+})
+    // .addIndicators({
+    //     name: 'about pin in'
+    // })
+    .setPin('#contacts', { pushFollowers: false })
+    .addTo(controller);
+
+const contactsOut = new ScrollMagic.Scene({
+    triggerElement: '.partners-container',
+    triggerHook: 0.9
+})
+    // .addIndicators({
+    //     name: 'contacts out'
+    // })
+    .setClassToggle('.contact-container', 'fade-out')
+    .addTo(controller);
+
+const partnersIn = new ScrollMagic.Scene({
+    triggerElement: '.partners-container',
+    triggerHook: 0.9
+})
+    .setClassToggle('.partners-container', 'fade-in')
+    .addTo(controller); 
