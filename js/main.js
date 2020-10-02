@@ -133,7 +133,7 @@ const firstPin = new ScrollMagic.Scene({
     .addTo(controller);
 
 const personOneIn = new ScrollMagic.Scene({
-    triggerElement: '.person-1',
+    triggerElement: '.person-1-desktop',
     triggerHook: 0.7,
     duration: '170%'
 })
@@ -144,7 +144,7 @@ const personOneIn = new ScrollMagic.Scene({
     .addTo(controller);
 
 const personTwoIn = new ScrollMagic.Scene({
-    triggerElement: '.person-2',
+    triggerElement: '.person-2-desktop',
     triggerHook: 0,
     duration: '100%'
 })
@@ -155,18 +155,18 @@ const personTwoIn = new ScrollMagic.Scene({
     .addTo(controller);
 
 const secondPin = new ScrollMagic.Scene({
-    triggerElement: '.person-2',
+    triggerElement: '.person-2-desktop',
     triggerHook: 0,
     duration: '100%'
 })
     // .addIndicators({
     //     name: 'person 2 pin'
     // })
-    .setPin('.person-2', { pushFollowers: false })
+    .setPin('.person-2-desktop', { pushFollowers: false })
     .addTo(controller);
 
 const personThreeIn = new ScrollMagic.Scene({
-    triggerElement: '.person-3',
+    triggerElement: '.person-3-desktop',
     triggerHook: 0,
     duration: '75%'
 })
@@ -177,18 +177,18 @@ const personThreeIn = new ScrollMagic.Scene({
     .addTo(controller);
 
 const thirdPin = new ScrollMagic.Scene({
-    triggerElement: '.person-3',
+    triggerElement: '.person-3-desktop',
     triggerHook: 0,
     duration: '50%'
 })
     // .addIndicators({
     //     name: 'person-3 pin in'
     // })
-    .setPin('.person-3', { pushFollowers: false })
+    .setPin('.person-3-desktop', { pushFollowers: false })
     .addTo(controller);
 
 const processIn = new ScrollMagic.Scene({
-    triggerElement: '.process',
+    triggerElement: '.process-desktop',
     triggerHook: 0.2,
     duration: '100%'
 })
@@ -198,15 +198,15 @@ const processIn = new ScrollMagic.Scene({
     .setClassToggle('.process-1', 'fade-in')
     .addTo(controller);
 
-    const mouseOut = new ScrollMagic.Scene({
-        triggerElement: '.process-container',
-        triggerHook: 0.8
-    })
-        .addIndicators({
-            name: 'mouse out'
-        })
-        .setClassToggle('.about-mouse', 'fade-out')
-        .addTo(controller);
+const mouseOut = new ScrollMagic.Scene({
+    triggerElement: '.process-container',
+    triggerHook: 0.8
+})
+    // .addIndicators({
+    //     name: 'mouse out'
+    // })
+    .setClassToggle('.about-mouse', 'fade-out')
+    .addTo(controller);
 
 
 /*

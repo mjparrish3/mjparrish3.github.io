@@ -74,10 +74,10 @@ hr {
 .first-content,
 .second-content.fade-in,
 .news-grid.fade-in,
-.person-1 .part-1.fade-in,
-.person-2 .part-2.fade-in,
-.person-3 .part-3.fade-in,
-.process .process-1.fade-in {
+.person-1-desktop .part-1.fade-in,
+.person-2-desktop .part-2.fade-in,
+.person-3-desktop .part-3.fade-in,
+.process-desktop .process-1.fade-in {
     opacity: 1;
     transition: 1s;
 }
@@ -572,7 +572,11 @@ a.logo:hover{
  === ABOUT ====
  ==============
  */
-.content .person-1 {
+.person-1-mobile,
+.mobile-content {
+    display: none;
+}
+.content .person-1-desktop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -765,15 +769,15 @@ a.logo:hover{
     width: 12%;
     border-radius: 50%;
 }
-.person-1 .people .person-1-img,
-.person-2 .people .person-2-img,
-.person-3 .people .person-3-img {
+.person-1-desktop .people .person-1-img,
+.person-2-desktop .people .person-2-img,
+.person-3-desktop .people .person-3-img {
     position: relative;
     z-index: 2;
 }
-.person-1 .part-1,
-.person-2 .part-2,
-.person-3 .part-3,
+.person-1-desktop .part-1,
+.person-2-desktop .part-2,
+.person-3-desktop .part-3,
 .process-1 {
     opacity: 0;
 }
@@ -827,23 +831,17 @@ a.logo:hover{
 }
 
 @media only screen and (max-width: 850px) {
-    .person-1 .people-content .person-2-text,
-    .person-1 .people-content .person-2-fav,
-    .person-1 .people-content .person-3-text,
-    .person-1 .people-content .person-3-fav,
-    .person-2 .people-content .person-1-text,
-    .person-2 .people-content .person-1-fav,
-    .person-2 .people-content .person-3-text,
-    .person-2 .people-content .person-3-fav,
-    .person-3 .people-content .person-1-text,
-    .person-3 .people-content .person-1-fav,
-    .person-3 .people-content .person-2-text,
-    .person-3 .people-content .person-2-fav {
+    .person-1-desktop,
+    .person-2-desktop,
+    .person-3-desktop,
+    .process-desktop {
         display: none;
     }
-    .person-1 .about-container,
-    .person-2 .about-container,
-    .person-3 .about-container {
+    .person-1-mobile,
+    .mobile-content {
+        display: initial;
+    }
+    .person-1-mobile .about-container {
         grid-template-columns: unset;
         margin-top: 14rem;
     }
@@ -853,8 +851,12 @@ a.logo:hover{
         margin-top: 20px;
         padding: 0 3rem;
     }
-    .column {
-        width: 40%;
+    .person-1-mobile .people .person-1-img {
+        position: relative;
+        z-index: 2;
+    }
+    .column-sides {
+        width: 30%;
     }
     .column-center {
         width: 55%;
