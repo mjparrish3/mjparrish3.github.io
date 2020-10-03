@@ -182,7 +182,7 @@ const thirdPin = new ScrollMagic.Scene({
     duration: '50%'
 })
     // .addIndicators({
-    //     name: 'person-3 pin in'
+    //     name: 'person-3-desktop pin in'
     // })
     .setPin('.person-3-desktop', { pushFollowers: false })
     .addTo(controller);
