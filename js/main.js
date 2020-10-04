@@ -122,14 +122,25 @@ About Content Transitions
 */
 
 const firstPin = new ScrollMagic.Scene({
-    triggerElement: '#about-us',
+    triggerElement: '.person-1-desktop',
     triggerHook: 0,
     duration: '700%'
 })
     // .addIndicators({
     //     name: 'about pin in'
     // })
-    .setPin('#about-us', { pushFollowers: false })
+    .setPin('.person-1-desktop', { pushFollowers: false })
+    .addTo(controller);
+
+const mobilePin = new ScrollMagic.Scene({
+    triggerElement: '.person-1-mobile',
+    triggerHook: 0,
+    duration: '700%'
+})
+    .addIndicators({
+        name: 'about pin in'
+    })
+    .setPin('.person-1-mobile', { pushFollowers: false })
     .addTo(controller);
 
 const personOneIn = new ScrollMagic.Scene({
