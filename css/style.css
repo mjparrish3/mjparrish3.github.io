@@ -839,7 +839,8 @@ a.logo:hover{
         display: none;
     }
     .person-1-mobile,
-    .mobile-content {
+    .mobile-content,
+    .process-mobile {
         display: initial;
     }
     .content .person-1-mobile {
@@ -849,11 +850,15 @@ a.logo:hover{
     }
     .person-1-mobile .about-container {
         grid-template-columns: none;
-        margin-top: 14rem;
+        margin: 4rem 0 0 2rem;
+        top: 0;
     }
     .person-1-mobile .about-img img {
         width: 100%;
         height: 100vh;
+    }
+    .person-1-mobile .people {
+        padding-left: 1.5rem;
     }
     .person-1 .people,
     .person-2 .people,
@@ -865,6 +870,9 @@ a.logo:hover{
         position: relative;
         z-index: 2;
     }
+    .about-text {
+        padding-top: 0;
+    }
     .column-sides {
         width: 9rem;
     }
@@ -874,88 +882,58 @@ a.logo:hover{
     .column-center img {
         width: 100%;
     }
-    /* .about-text hr {
-        margin-left: 30%;
+    .mobile-content {
+        padding: 0 2rem;
     }
-    .about-text {
-        text-align: right;
+    .text-container {
+        padding: 0 3rem;
     }
-    .people-content {
-        margin-left: 8%;
-        margin-top: 15px;
-        grid-template-columns: 80px 1fr;
-        grid-template-areas: 
-            "first second";
-    }
-    .people-text {
-        grid-area: second;
-    }
-    .favicon-container {
-        grid-area: first;
-    }
-    .people .overlay {
-        height: 25%;
-        width: 25%;
-    }
-    .names {
-        font-size: 1.3rem;
-    }
-    .job-title {
-        font-weight: 200;
-    }
-    .process-img {
-        width: 100%;
-    }
-    .process-img-container {
-        width: 100%;
-        grid-area: image;
-    }
-    .process-text {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 40px;
-        grid-area: info;
-    }
-    .process-container hr {
-        width: 60%;
-    }
-    .process-container {
-        grid-template-columns: unset;
-        grid-template-areas: 
-        'info'
-        'image';
-        margin: 0 20px;
-    }
-    .quotes,
-    .process-1-content .quotes {
+    .text-container .quotes {
         line-height: 1;
-        font-size: 1.5rem;
+        margin: 2rem 0;
     }
-    .about-text .title {
-        margin: 5px 0;
+    .process-1-content {
+        padding: 0;
     }
     .process-1-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin: 2rem 0 1rem 0;
     }
-    .questions {
-        margin: .5rem 0;
+
+    .process-1-content .quotes {
+        font-size: 2rem;
+        margin: 0;
     }
-    .process-4 .process-img-container {
-        width: 61%;
-        margin: 0 auto;
+    .process-text {
+        text-align: left;
     }
-    .process-4 .process-text {
-        margin-bottom: 10px;
+    .sub-title {
+        margin: 3rem 0 1rem 0;
     }
-    .process-5 {
-        grid-template-areas: unset;
-        grid-template-rows: repeat(4, 1fr);
+    .process-2-3-title {
+        text-align: left;
+        margin: 2rem 0;
     }
-    .partners {
-        grid-template-columns: unset;
-        grid-template-rows: 1fr 1fr;
-    } */
-}
+    .process-img-container img {
+        width: 100%;
+    }
+    .process-text hr {
+        margin-top: 2rem;
+    }
+    .row .sub-title {
+        text-align: center;
+    }
+    .row .mini-sub,
+    .row p,
+    .row .practice,
+    .row ul {
+        text-align: left;
+    }
+    .row .process-img-container,
+    .row p,
+    .row ul {
+        margin: 1rem 0;
+    }}
 /* End About Us Content */
 
 
