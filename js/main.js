@@ -127,7 +127,7 @@ const firstPin = new ScrollMagic.Scene({
     duration: '700%'
 })
     // .addIndicators({
-    //     name: 'about pin in'
+    //     name: 'desktop pin in'
     // })
     .setPin('.person-1-desktop', { pushFollowers: false })
     .addTo(controller);
@@ -138,7 +138,7 @@ const firstPin = new ScrollMagic.Scene({
 //     duration: '700%'
 // })
 //     .addIndicators({
-//         name: 'about pin in'
+//         name: 'mobile pin in'
 //     })
 //     .setPin('.person-1-mobile', { pushFollowers: false })
 //     .addTo(controller);
@@ -151,7 +151,7 @@ const personOneIn = new ScrollMagic.Scene({
     // .addIndicators({
     //     name: 'person 1 in'
     // })
-    .setClassToggle('.part-1', 'fade-in')
+    .setClassToggle('.part-1-desktop', 'fade-in')
     .addTo(controller);
 
 const personTwoIn = new ScrollMagic.Scene({
@@ -162,7 +162,7 @@ const personTwoIn = new ScrollMagic.Scene({
     // .addIndicators({
     //     name: 'person 2 in'
     // })
-    .setClassToggle('.part-2', 'fade-in')
+    .setClassToggle('.part-2-desktop', 'fade-in')
     .addTo(controller);
 
 const secondPin = new ScrollMagic.Scene({
@@ -184,7 +184,7 @@ const personThreeIn = new ScrollMagic.Scene({
     // .addIndicators({
     //     name: 'person 3 in'
     // })
-    .setClassToggle('.part-3', 'fade-in')
+    .setClassToggle('.part-3-desktop', 'fade-in')
     .addTo(controller);
 
 const thirdPin = new ScrollMagic.Scene({
