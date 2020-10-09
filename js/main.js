@@ -236,6 +236,17 @@ const contactPin = new ScrollMagic.Scene({
     .setPin('#contacts', { pushFollowers: false })
     .addTo(controller);
 
+// const mobileContactPin = new ScrollMagic.Scene({
+//     triggerElement: '#contacts',
+//     triggerHook: 0,
+//     duration: '200%'
+// })
+//     .addIndicators({
+//         name: 'contact pin in'
+//     })
+//     .setPin('#contacts.contact-img', { pushFollowers: false })
+//     .addTo(controller);
+
 const contactsOut = new ScrollMagic.Scene({
     triggerElement: '.partners-container',
     triggerHook: 0.9

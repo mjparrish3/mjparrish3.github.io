@@ -823,16 +823,16 @@ a.logo:hover{
     .person-1-mobile .people {
         padding-left: 1.5rem;
     }
-    .person-1 .people,
+    /* .person-1 .people,
     .person-2 .people,
     .person-3 .people {
         margin-top: 20px;
         padding: 0 3rem;
-    }
-    .person-1-mobile .people .person-1-img {
+    } */
+    /* .person-1-mobile .people .person-1-img {
         position: relative;
         z-index: 2;
-    }
+    } */
     .about-text {
         padding-top: 0;
     }
@@ -896,7 +896,14 @@ a.logo:hover{
     .row p,
     .row ul {
         margin: 1rem 0;
-    }}
+    }
+    .leadership-container {
+        width: 9rem;
+    }
+    .leadership-container img {
+        width: 100%;
+    }
+}
 /* End About Us Content */
 
 
@@ -950,7 +957,7 @@ a.logo:hover{
 }
 .media-grid {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
+    grid-template-columns: repeat(2, 50px);
     margin-top: 10px;
 }
 .contact-img-container {
