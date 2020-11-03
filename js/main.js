@@ -58,14 +58,14 @@ Home Content Transitions
 */
 
 const homePin = new ScrollMagic.Scene({
-    triggerElement: '.home-video',
+    triggerElement: '.home-video-container',
     triggerHook: 0,
     duration: '200%'
 })
     // .addIndicators({
     //     name: 'home pin'
     // })
-    .setPin('.home-video')
+    .setPin('.home-video-container')
     .addTo(controller);
 
 const firstContentOut = new ScrollMagic.Scene({
