@@ -13,7 +13,7 @@ html {
 }
 .home-content {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ hr {
  */
 
  .main-nav{
-    width: 100%;
+    width: 100vw;
     height: 55px;
     position: fixed;
     top: 0;
@@ -321,7 +321,7 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
 }
 /* .home-video-mobile .home-video {
     display: none;
@@ -427,7 +427,7 @@ a.logo:hover{
     }
     .home-grid {
         display: unset;
-        padding-right: unset;
+        padding-right: 0;
     }
     .home-content-text h1 {
         font-size: 2rem;
@@ -931,12 +931,15 @@ a.logo:hover{
     .leadership-names {
         font-size: 1.5rem;
     }
-    .leadership-job-titles {
-        font-size: 1rem;
+    .leadership-job-title {
+        font-size: .8rem;
     }
     .favicon-container  {
         float: right;
         margin-right: 6rem;
+    }
+    .favicon-img {
+        width: 3rem;
     }
     .leadership-content-container {
         position: absolute;
@@ -1110,12 +1113,17 @@ a.logo:hover{
         top: 0;
         left: 0;
     }
+    .contact-content .quotes {
+        line-height: 1.1;
+    }
     .contact-info {
-        grid-template-columns: unset;
         grid-row-gap: 20px;
         width: 100%;
         padding-left: 1rem;
         padding-top: 1rem;
+    }
+    .contact-info .sub-title {
+        margin-top:  1rem;
     }
     .contact-left {
         width: 100%;
@@ -1157,7 +1165,7 @@ a.logo:hover{
     .partners-mobile {
         position: absolute;
         height: 135%;
-        width: 108%;
+        width: 100vw;
         top: 675rem;
         background-color: black;
         color: white;
@@ -1168,9 +1176,10 @@ a.logo:hover{
     .partner-logo-container {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
     }
     .partner-logo-container .partner-img-container {
-        width: 12rem;
+        width: 10rem;
     }
     .partners-mobile .process-text {
         text-align: right;
