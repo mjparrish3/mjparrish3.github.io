@@ -42,7 +42,7 @@ hr {
     clear: both;
     background-color: white;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     hr {
         width: 70%;
     }
@@ -191,7 +191,7 @@ hr {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     .inner-nav {
         display: none;
         width: 90px;
@@ -412,7 +412,7 @@ a.logo:hover{
     opacity: 0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     /* .home-video-container {
         display: none;
     }
@@ -426,7 +426,6 @@ a.logo:hover{
         display: none;
     }
     .home-grid {
-        display: unset;
         padding-right: 0;
     }
     .home-content-text h1 {
@@ -507,7 +506,7 @@ a.logo:hover{
     font-weight: 200;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     .news-grid {
         opacity: 100%;
     }
@@ -797,7 +796,7 @@ a.logo:hover{
     opacity: 0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     .person-1-desktop,
     .person-2-desktop,
     .person-3-desktop,
@@ -847,7 +846,7 @@ a.logo:hover{
     } */
     .about-text {
         position: absolute;
-        top: 205rem;
+        top: 220rem;
         padding-top: 0;
         background-color: black;
         color: white;
@@ -916,7 +915,7 @@ a.logo:hover{
     }
     .leadership-container {
         width: 9rem;
-        margin: 0 auto;
+        margin: 1rem auto;
     }
     .leadership-container img {
         width: 100%;
@@ -945,7 +944,7 @@ a.logo:hover{
         position: absolute;
         width: 29rem;
         top: 0;
-        margin: 1rem;
+        margin: 3rem;
     }
     .leadership-content-container .title {
         text-align: right; 
@@ -1099,22 +1098,25 @@ a.logo:hover{
     font-family: 'Roboto', 'san-serif';
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     .contacts-page-mobile {
         position: absolute;
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        top: 629.5rem;
+        top: 646.5rem;
     }
     .contact-content {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
+        margin-top: 4rem;
     }
     .contact-content .quotes {
         line-height: 1.1;
+        width: 90%;
+        margin: 0 auto;
     }
     .contact-info {
         grid-row-gap: 20px;
@@ -1166,12 +1168,13 @@ a.logo:hover{
         position: absolute;
         height: 135%;
         width: 100vw;
-        top: 675rem;
+        top: 697rem;
         background-color: black;
         color: white;
     }
     .partners-logos {
         grid-template-columns: none;
+        margin-left: 4rem;
     }
     .partner-logo-container {
         grid-template-rows: none;
@@ -1222,7 +1225,7 @@ a.logo:hover{
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 550px) {
     /* .footer-img-container {
         margin: 10px;
     }
