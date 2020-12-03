@@ -846,7 +846,7 @@ a.logo:hover{
     } */
     .about-text {
         position: absolute;
-        top: 220rem;
+        width: 100vw;
         padding-top: 0;
         background-color: black;
         color: white;
@@ -1101,10 +1101,10 @@ a.logo:hover{
 @media only screen and (max-width: 550px) {
     .contacts-page-mobile {
         position: absolute;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
-        top: 646.5rem;
+        top: 631.5rem;
     }
     .contact-content {
         position: absolute;
@@ -1168,7 +1168,7 @@ a.logo:hover{
         position: absolute;
         height: 135%;
         width: 100vw;
-        top: 697rem;
+        top: 679rem;
         background-color: black;
         color: white;
     }
