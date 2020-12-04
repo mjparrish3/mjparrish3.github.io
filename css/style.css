@@ -14,7 +14,6 @@ html {
 .home-content {
     position: relative;
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,6 +332,11 @@ a.logo:hover{
     margin-top: 10px;
     padding-right: 10%;
 }
+.intro-1 {
+    height: 100vh;
+    margin-top: 10rem;
+    width: 75%;
+}
 .second-content {
     opacity: 0;
     transition: 1s;
@@ -507,9 +511,9 @@ a.logo:hover{
 }
 
 @media only screen and (max-width: 550px) {
-    .news-grid {
+    /* .news-grid {
         opacity: 100%;
-    }
+    } */
     .news-page {
         height: 100%;
     }
@@ -914,7 +918,7 @@ a.logo:hover{
         margin: 1rem 0;
     }
     .leadership-container {
-        width: 9rem;
+        width: 6.5rem;
         margin: 1rem auto;
     }
     .leadership-container img {
@@ -925,7 +929,7 @@ a.logo:hover{
     }
     .leadership-titles {
         float: left;
-        width: 60%;
+        width: 69%;
     }
     .leadership-names {
         font-size: 1.5rem;
@@ -935,16 +939,20 @@ a.logo:hover{
     }
     .favicon-container  {
         float: right;
-        margin-right: 6rem;
+        margin-right: 2rem;
     }
     .favicon-img {
         width: 3rem;
     }
+    .leadership-content {
+        width: 84%;
+        margin-left: 4rem;
+    }
     .leadership-content-container {
         position: absolute;
-        width: 29rem;
+        width: 100vw;
         top: 0;
-        margin: 3rem;
+        margin-top: 2rem;
     }
     .leadership-content-container .title {
         text-align: right; 
@@ -1174,7 +1182,6 @@ a.logo:hover{
     }
     .partners-logos {
         grid-template-columns: none;
-        margin-left: 4rem;
     }
     .partner-logo-container {
         grid-template-rows: none;
