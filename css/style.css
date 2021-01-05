@@ -41,7 +41,7 @@ hr {
     clear: both;
     background-color: white;
 }
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     hr {
         width: 70%;
     }
@@ -416,7 +416,7 @@ a.logo:hover{
     opacity: 0;
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     /* .home-video-container {
         display: none;
     }
@@ -510,7 +510,7 @@ a.logo:hover{
     font-weight: 200;
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     /* .news-grid {
         opacity: 100%;
     } */
@@ -563,8 +563,8 @@ a.logo:hover{
         'img-4 . .' 
         'content-4 content-4 .';
         grid-row-gap: 1rem;
-        width: 100%;
-        margin-left: 1rem;
+        width: 94vw;
+        margin-left: 0.5rem;
     }
     .content-news-title {
         margin-top: 0;
@@ -800,7 +800,7 @@ a.logo:hover{
     opacity: 0;
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     .person-1-desktop,
     .person-2-desktop,
     .person-3-desktop,
@@ -838,16 +838,6 @@ a.logo:hover{
     .person-1-mobile .people {
         padding-left: 1.5rem;
     }
-    /* .person-1 .people,
-    .person-2 .people,
-    .person-3 .people {
-        margin-top: 20px;
-        padding: 0 3rem;
-    } */
-    /* .person-1-mobile .people .person-1-img {
-        position: relative;
-        z-index: 2;
-    } */
     .about-text {
         position: absolute;
         width: 100vw;
@@ -1106,11 +1096,11 @@ a.logo:hover{
     font-family: 'Roboto', 'san-serif';
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     .contacts-page-mobile {
         position: absolute;
         width: 100vw;
-        height: 100vh;
+        height: auto;
         overflow: hidden;
         top: 631.5rem;
     }
@@ -1140,9 +1130,6 @@ a.logo:hover{
     }
     .contact-info h1 {
         text-align: left;
-    }
-    .contacts-page-mobile {
-        height: 100%;
     }
     .contact-links {
         width: 200px;
@@ -1176,7 +1163,7 @@ a.logo:hover{
         position: absolute;
         height: 135%;
         width: 100vw;
-        top: 679rem;
+        top: 698rem;
         background-color: black;
         color: white;
     }
@@ -1201,6 +1188,24 @@ a.logo:hover{
         width: 20rem;
     }
 
+}
+@media screen and (max-width: 375px) {
+    .contacts-page-mobile {
+        top: 636.5rem;
+    }
+    .partners-mobile {
+        top: 704rem;
+    }
+    .contact-content .quotes, 
+    .partners-container-mobile .quotes {
+        font-size: 1.8rem;
+    }
+    .partner-img-container {
+        width: 16rem;
+    }
+    .partners-mobile .process-text hr {
+        margin-left: 5.5rem;
+    }
 }
 /* End Contact Content */
 
@@ -1232,7 +1237,7 @@ a.logo:hover{
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     /* .footer-img-container {
         margin: 10px;
     }

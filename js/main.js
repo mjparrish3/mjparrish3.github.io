@@ -6,6 +6,7 @@ Nav Transitions
 =============== 
 */
 
+
 const navBkgIn = new ScrollMagic.Scene({
     triggerElement: '.first-content',
     triggerHook: 0.3
@@ -62,9 +63,9 @@ const homePin = new ScrollMagic.Scene({
     triggerHook: 0,
     duration: '200%'
 })
-    // .addIndicators({
-    //     name: 'home pin'
-    // })
+    .addIndicators({
+        name: 'home pin'
+    })
     .setPin('.home-video-container')
     .addTo(controller);
 
