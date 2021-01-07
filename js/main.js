@@ -63,9 +63,9 @@ const homePin = new ScrollMagic.Scene({
     triggerHook: 0,
     duration: '200%'
 })
-    .addIndicators({
-        name: 'home pin'
-    })
+    // .addIndicators({
+    //     name: 'home pin'
+    // })
     .setPin('.home-video-container')
     .addTo(controller);
 
@@ -155,6 +155,17 @@ const personOneIn = new ScrollMagic.Scene({
     .setClassToggle('.part-1-desktop', 'fade-in')
     .addTo(controller);
 
+const personOneIpadIn = new ScrollMagic.Scene({
+    triggerElement: '.person-1-desktop',
+    triggerHook: 0.7,
+    duration: '170%'
+})
+    // .addIndicators({
+    //     name: 'person 1 in'
+    // })
+    .setClassToggle('.part-1-ipad', 'fade-in')
+    .addTo(controller);
+
 const personTwoIn = new ScrollMagic.Scene({
     triggerElement: '.person-2-desktop',
     triggerHook: 0,
@@ -164,6 +175,17 @@ const personTwoIn = new ScrollMagic.Scene({
     //     name: 'person 2 in'
     // })
     .setClassToggle('.part-2-desktop', 'fade-in')
+    .addTo(controller);
+
+const personTwoIpadIn = new ScrollMagic.Scene({
+    triggerElement: '.person-2-desktop',
+    triggerHook: 0,
+    duration: '100%'
+})
+    // .addIndicators({
+    //     name: 'person 2 in'
+    // })
+    .setClassToggle('.part-2-ipad', 'fade-in')
     .addTo(controller);
 
 const secondPin = new ScrollMagic.Scene({
@@ -186,6 +208,17 @@ const personThreeIn = new ScrollMagic.Scene({
     //     name: 'person 3 in'
     // })
     .setClassToggle('.part-3-desktop', 'fade-in')
+    .addTo(controller);
+
+const personThreeIpadIn = new ScrollMagic.Scene({
+    triggerElement: '.person-3-desktop',
+    triggerHook: 0,
+    duration: '75%'
+})
+    // .addIndicators({
+    //     name: 'person 3 in'
+    // })
+    .setClassToggle('.part-3-ipad', 'fade-in')
     .addTo(controller);
 
 const thirdPin = new ScrollMagic.Scene({
