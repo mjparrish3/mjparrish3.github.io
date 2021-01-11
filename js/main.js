@@ -9,7 +9,7 @@ Nav Transitions
 
 const navBkgIn = new ScrollMagic.Scene({
     triggerElement: '.first-content',
-    triggerHook: 0.3
+    triggerHook: 0.2
 })
     // .addIndicators({
     //     name: 'main nav in'
@@ -17,9 +17,19 @@ const navBkgIn = new ScrollMagic.Scene({
     .setClassToggle('.main-nav', 'fade-in')
     .addTo(controller);
 
+const mobileNavBkg = new ScrollMagic.Scene({
+    triggerElement: '.first-content',
+    triggerHook: 0.2
+})
+    // .addIndicators({
+    //     name: 'mobile nav in'
+    // })
+    .setClassToggle('.inner-nav', 'fade-in')
+    .addTo(controller);
+
 const colorChange = new ScrollMagic.Scene({
     triggerElement: '.first-content',
-    triggerHook: 0.3
+    triggerHook: 0.2
 })
     // .addIndicators({
     //     name: 'color change'
@@ -28,7 +38,7 @@ const colorChange = new ScrollMagic.Scene({
     .addTo(controller);
 const colorChange2 = new ScrollMagic.Scene({
     triggerElement: '.first-content',
-    triggerHook: 0.3
+    triggerHook: 0.2
 })
     // .addIndicators({
     //     name: 'color change'
@@ -38,14 +48,14 @@ const colorChange2 = new ScrollMagic.Scene({
 
 const logoOut = new ScrollMagic.Scene({
     triggerElement: '.first-content',
-    triggerHook: 0.3
+    triggerHook: 0.2
 })
     .setClassToggle('.light', 'fade-out')
     .addTo(controller)
 
 const logoIn = new ScrollMagic.Scene({
     triggerElement: '.first-content',
-    triggerHook: 0.3
+    triggerHook: 0.2
 })
     .setClassToggle('.dark', 'fade-in')
     .addTo(controller)

@@ -194,10 +194,13 @@ hr {
     .inner-nav {
         display: none;
         width: 90px;
-        background-color: white;
+        /* background-color: white; */
         position: absolute;
         top: 100%;
         right: 0;
+    }
+    .inner-nav.fade-in {
+        background-color: white;
     }
     .nav-toggle:checked ~ .inner-nav {
         display: block;
@@ -1047,12 +1050,12 @@ a.logo:hover{
         padding-right: 5rem; 
     }
     .leadership-content-container hr {
-        margin-left: 3.5rem;
+        margin-left: 3.7rem;
     }
 }
 @media screen and (max-width: 320px) {
     .leadership-content-container hr {
-        margin-left: 1.8rem;
+        margin-left: 3rem;
     }
     .leadership-content-container {
         margin-top: 1rem;
