@@ -24,3 +24,17 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
 })
+
+/*************
+    Hamburger
+    *********/
+   function openBurger() {
+    console.log("Open")
+    var dropDown = document.getElementById("burger");
+    dropDown.classList.add("open");
+}
+function closeBurger() {
+    console.log("Close")
+    var dropDown = document.getElementById("burger");
+    dropDown.classList.remove("open");
+}

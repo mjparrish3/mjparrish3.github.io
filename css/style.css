@@ -215,6 +215,12 @@ hr {
         margin: 0;
         margin-bottom: 5px;
     }
+    .open {
+		display: inline;
+	}
+    .close {
+		display: none;
+	}
     .nav-toggle-label {
         position: absolute;
         top: 0;

@@ -30,7 +30,6 @@
         -->
         <nav class="main-nav main-nav-center stick-fixed">
             <div class="full-wrapper nav-bkg relative clearfix">
-
                 <!-- Logo ( * your text or image into link tag *) -->
                 <div class="nav-logo-wrap">
                     <a href="#home" class="logo light"><img src="images/Logos/S31_Logo_Horizontal_Color_Dark.png"
@@ -38,19 +37,20 @@
                     <a href="#home" class="logo dark"><img src="images/Logos/S31_Logo_Horizontal_Color_Light.png"
                             width="140" alt="Logo" /></a>
                 </div>
-
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <!-- Main Menu -->
-                <div class="inner-nav desktop-nav">
+                <!--!!!!!!!!! Added id below!!!!!!!!!!!!!-->
+                <div id="burger" class="inner-nav desktop-nav">
                     <ul class="clearlist scroll-nav">
-                        <li class="active"><a href="#home" class="nav-button">Home</a></li>
-                        <li><a href="#news" class="nav-button">News</a></li>
-                        <li><a href="#about-us" class="nav-button">About</a></li>
-                        <li id="contact-button"><a href="#contacts" class="nav-button">Contacts</a></li>
+                        <!--!!!!!!!!! Added onclick to each anchor tag !!!!!!!!!!!!!-->
+                        <li class="active"><a href="#home" class="nav-button"  onclick="closeBurger()">Home</a></li>
+                        <li><a href="#news" class="nav-button" onclick="closeBurger()">News</a></li>
+                        <li><a href="#about-us" class="nav-button" onclick="closeBurger()">About</a></li>
+                        <li id="contact-button"><a href="#contacts" class="nav-button" onclick="closeBurger()">Contacts</a></li>
                     </ul>
                 </div>
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
+                <label class="nav-toggle-label">
+                    <span class="test-me" onclick="openBurger()"></span>
                 </label>
             </div>
         </nav>
@@ -857,7 +857,7 @@
         <div class="content person-1-mobile" id="about-us">
             <!-- Background Image -->
             <div class="about-img">
-                <img src="images/About-Images/About.png" alt="">
+                <img src="images/About-Images/About.png" alt="#about-us">
             </div>
             <!-- End Background Image -->
 

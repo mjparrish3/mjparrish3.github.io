@@ -307,3 +307,4 @@ const partnersIn = new ScrollMagic.Scene({
 })
     .setClassToggle('.partners-container', 'fade-in')
     .addTo(controller); 
+
