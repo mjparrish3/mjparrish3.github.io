@@ -1,4 +1,6 @@
-//Display active on scroll
+/**************************
+ * Display active on scroll
+ * ************************/
 $(document).ready(function () {
 
     var scrollLink = $('.nav-button')
@@ -17,7 +19,9 @@ $(document).ready(function () {
     })
 })
 
-//Display active on click
+/************************** 
+ * Display active on click
+ * ************************/
 $(document).ready(function () {
     $('li').on('click', function () {
         $(this).siblings().removeClass('active');

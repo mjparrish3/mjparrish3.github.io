@@ -45,8 +45,10 @@
                         <!--!!!!!!!!! Added onclick to each anchor tag !!!!!!!!!!!!!-->
                         <li class="active"><a href="#home" class="nav-button"  onclick="closeBurger()">Home</a></li>
                         <li><a href="#news" class="nav-button" onclick="closeBurger()">News</a></li>
-                        <li><a href="#about-us" class="nav-button" onclick="closeBurger()">About</a></li>
-                        <li id="contact-button"><a href="#contacts" class="nav-button" onclick="closeBurger()">Contacts</a></li>
+                        <li class='nav-about-button'><a href="#about-us" class="nav-button" onclick="closeBurger()">About</a></li>
+                        <li id="contact-button" class="nav-contact-button"><a href="#contacts" class="nav-button" onclick="closeBurger()">Contacts</a></li>
+                        <li class="nav-button-mobile"><a href="#about-us-mobile" class='nav-button'  onclick="closeBurger()">About</a></li>
+                        <li class="nav-button-mobile" id="contact-button"><a href="#contacts-mobile" class='nav-button' onclick="closeBurger()">Contacts</a></li>
                     </ul>
                 </div>
                 <label class="nav-toggle-label">
@@ -854,7 +856,7 @@
                 Mobile About
             ====================
          -->
-        <div class="content person-1-mobile" id="about-us">
+        <div class="content person-1-mobile" id="about-us-mobile">
             <!-- Background Image -->
             <div class="about-img">
                 <img src="images/About-Images/About.png" alt="#about-us">
@@ -1262,7 +1264,7 @@
             ================
         -->
 
-        <div class="contacts-page-mobile" id="contacts">
+        <div class="contacts-page-mobile" id="contacts-mobile">
             <!-- Image Background -->
             <div class="contact-img">
                 <img src="images/Contact-Images/Contact.png" alt="#contacts">
