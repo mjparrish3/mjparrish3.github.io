@@ -43,10 +43,10 @@
                 <div id="burger" class="inner-nav desktop-nav">
                     <ul id="navigation" class="clearlist scroll-nav">
                         <!--!!!!!!!!! Added onclick to each anchor tag !!!!!!!!!!!!!-->
-                        <li class="active"><a href="#home" class="nav-button"  onclick="closeBurger()">Home</a></li>
-                        <li><a href="#news" class="nav-button" onclick="closeBurger()">News</a></li>
-                        <li class='nav-about-button'><a href="#about-us" class="nav-button" onclick="closeBurger()">About</a></li>
-                        <li id="contact-button" class="nav-contact-button"><a href="#contacts" class="nav-button" onclick="closeBurger()">Contacts</a></li>
+                        <li class="active btn-wrapper"><a href="#home" class="nav-button"  onclick="closeBurger(), navOnClick()">Home</a></li>
+                        <li class='btn-wrapper'><a href="#news" class="nav-button" onclick="closeBurger(), navOnClick()">News</a></li>
+                        <li class='nav-about-button btn-wrapper'><a href="#about-us" class="nav-button" onclick="closeBurger(), navOnClick()">About</a></li>
+                        <li id="contact-button" class="nav-contact-button btn-wrapper"><a href="#contacts" class="nav-button" onclick="closeBurger(), navOnClick()">Contacts</a></li>
                         <li class="nav-button-mobile"><a href="#about-us-mobile" class='nav-button'  onclick="closeBurger()">About</a></li>
                         <li class="nav-button-mobile" id="contact-button"><a href="#contacts-mobile" class='nav-button' onclick="closeBurger()">Contacts</a></li>
                     </ul>
